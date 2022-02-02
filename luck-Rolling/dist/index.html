@@ -4,14 +4,75 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>Dice Rolling</title>
   </head>
   <body>
     <main>
       <div class="container">
-        <div class="container-player"></div>
-        <div class="container-menu"></div>
-        <div class="container-player"></div>
+        <div class="container-player">
+          <div class="header">
+            <h2 class="player-name">
+              <span contenteditable>Player - 1</span>
+              <i class="fas fa-user"></i>
+            </h2>
+          </div>
+          <div class="content-record">
+            <div class="final-score">6</div>
+            <div class="score-card">
+              <div class="title">CURRENT</div>
+              <div class="current-score">0</div>
+            </div>
+          </div>
+        </div>
+        <div class="container-menu">
+          <button class="reset-game">
+            <span class="btn-icon"
+              ><img src="./assets/icons/newgame-icon.svg" alt=""
+            /></span>
+            NEW GAME
+          </button>
+          <div>
+            <img class="dice-img" src="./assets/dices/dice-6.png" alt="" />
+          </div>
+          <button class="roll-dice">
+            <span class="btn-icon"
+              ><img src="./assets/icons/dice-icon.svg" alt="" /></span
+            >ROLL DICE
+          </button>
+          <button class="hold">
+            <span class="btn-icon"
+              ><img src="./assets/icons/hold-icon.svg" alt="" /></span
+            >HOLD
+          </button>
+        </div>
+        <div class="container-player">
+          <div class="header">
+            <h2 class="player-name">
+              <span contenteditable>Player - 2</span>
+              <i class="fas fa-user"></i>
+            </h2>
+          </div>
+          <div class="content-record">
+            <div class="final-score">7</div>
+            <div class="score-card">
+              <div class="title">CURRENT</div>
+              <div class="current-score">0</div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   </body>
