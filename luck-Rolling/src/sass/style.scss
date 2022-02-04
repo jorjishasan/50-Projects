@@ -1,5 +1,6 @@
 @import "./reset";
-
+@import "./animation";
+@import "./modalwindow";
 //colors
 $primary-color: #354e8b;
 $secondary-color: #62a8dc;
@@ -39,6 +40,11 @@ $font-lato: "Lato", sans-serif;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.29);
 }
 
+.help-icon {
+  @extend .btn;
+  padding: 0;
+  border-radius: 50%;
+}
 .btn-icon > img {
   width: 20px;
   height: 20px;
@@ -51,15 +57,19 @@ body {
   background-color: $primary-color;
   height: 100vh;
   display: grid;
-  // place-items: center;
+  place-items: center;
   color: $text-color;
   font-size: 1.5rem;
   text-align: center;
+  position: relative;
+}
+main {
+  align-self: start;
 }
 
 .container {
   margin: 0 auto;
-  margin-top: 4rem;
+  // margin-top: 4rem;
   width: 1140px;
   height: 456px;
   background-color: $primary-color;
@@ -84,10 +94,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    // height: 85%;
     min-height: 370px;
     display: grid;
     place-items: center;
+    transition: background-image 0.5s ease-in;
   }
   .final-score {
     font-size: 5rem;
@@ -141,6 +151,66 @@ body {
     font-size: 1.6rem;
   }
 }
+//footer styling
+a {
+  text-decoration: none;
+  transition: color 0.2s ease-in;
+  &:hover {
+    color: $success-color;
+  }
+}
+
+footer {
+  .footer-icons {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    .iconNtext {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 2%;
+      letter-spacing: 0px;
+      transition: all 0.2s ease-in;
+      color: $text-color;
+
+      .icon {
+        transition: all 0.2s ease-in;
+      }
+
+      &:hover .icon {
+        transform: translateY(-10%);
+      }
+      &:hover .text {
+        color: $success-color;
+      }
+      .text {
+        transition: all 0.2s ease-in;
+        font-size: 1.5rem;
+      }
+    }
+    .iconNtext:not(:first-child) {
+      margin-left: 1.5rem;
+    }
+  }
+  .footer-text {
+    margin-top: 1.5rem;
+    display: flex;
+    font-size: 2.5rem;
+    justify-content: center;
+    .fp {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+      margin: 0 0.2rem;
+      img {
+        width: 90%;
+      }
+    }
+  }
+}
 
 //functional class selector
 .active {
@@ -155,5 +225,26 @@ body {
 .winner {
   .content-record {
     background-image: url("../assets/backgrounds/success-background.svg");
+  }
+}
+
+.winner .player-name {
+  position: relative;
+  &::after {
+    content: "-winner🥇";
+    margin-left: 1rem;
+    -webkit-text-stroke: 0.3px $text-color;
+    font-weight: map-get($font-weights, bold);
+    color: $primary-color;
+    font-size: 3.5rem;
+    letter-spacing: -0.5px;
+    animation: 1s pulsate infinite;
+    position: absolute;
+  }
+}
+
+@keyframes pulsate {
+  50% {
+    color: $success-color;
   }
 }
