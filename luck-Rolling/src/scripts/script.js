@@ -49,7 +49,7 @@ rollDiceBtn.onclick = () => {
     if (dice === 1) {
         setTimeout(() => {//for user's visualizing[swap]
             swapActive();
-        }, 500);
+        }, 400);
     }
     else {
         activePlayerCurrentScore.innerHTML =
