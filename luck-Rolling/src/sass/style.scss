@@ -231,15 +231,20 @@ footer {
 .winner .player-name {
   position: relative;
   &::after {
-    content: "-winner🥇";
+    content: "-winner";
     margin-left: 1rem;
-    -webkit-text-stroke: 0.3px $text-color;
+    display: inline-block;
+    -webkit-text-stroke: 0.19px $text-color;
     font-weight: map-get($font-weights, bold);
     color: $primary-color;
-    font-size: 3.5rem;
+    font-size: clamp(2.5rem, 2.1vw, 3rem);
     letter-spacing: -0.5px;
     animation: 1s pulsate infinite;
     position: absolute;
+    bottom: 0;
+  }
+  &::before {
+    content: "🏅";
   }
 }
 
