@@ -11,11 +11,11 @@ html {
   font-size: 62.5%;
 }
 body {
-  height: 100vh;
   display: grid;
+  height: 100vh;
+  color: white;
   place-items: center;
   font-family: "Mulish", sans-serif;
-  color: white;
   background-color: #787bf6;
 }
 .container {
@@ -23,23 +23,23 @@ body {
   display: flex;
 }
 .box {
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
+  flex: 0.5;
   height: 80vh;
   cursor: pointer;
-  flex: 0.5;
   position: relative;
-  transition: flex 0.7 ease-in;
   border-radius: 10px;
+  transition: flex 0.7 ease-in;
 }
 
 .box h2 {
+  opacity: 0;
+  left: 4rem;
+  bottom: 4rem;
   font-size: 5rem;
   text-align: center;
-  opacity: 0;
-  bottom: 4rem;
-  left: 4rem;
   position: absolute;
 }
 
