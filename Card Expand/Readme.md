@@ -1,4 +1,4 @@
-## Visualize this project [Live🔗](https://expandcards.netlify.app/)
+## Visualize this project [Live🔗](https://expandscard.netlify.app/)
 
 ## **key curves**:
 
