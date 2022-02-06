@@ -31,7 +31,7 @@ body {
   cursor: pointer;
   position: relative;
   border-radius: 10px;
-  transition: flex 0.7s ease-in;
+  transition: flex 0.76s ease-in;
 }
 
 .box h2 {
