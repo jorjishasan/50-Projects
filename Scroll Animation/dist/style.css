@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@500;700&display=swap");
 
 *,
 *::before,
@@ -10,4 +10,54 @@
 
 html {
   font-size: 62.5%;
+}
+:root {
+  --color-primary: #3e497a;
+  --white-text: #fff;
+  --softwhite-text: #f0f0f0;
+  --accent-color: #fdde24;
+}
+body {
+  font-family: "Mulish", sans-serif;
+  font-size: 1.6rem;
+  display: grid;
+  place-items: center;
+  background: var(--color-primary);
+  padding: 2rem;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+
+.headings {
+  font-size: clamp(3rem, 2.8vw, 4rem);
+  color: var(--accent-color);
+  font-weight: 700;
+  margin: 2rem 0;
+}
+
+.box h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--softwhite-text);
+}
+
+.box {
+  width: 70%;
+  max-width: 700px;
+  height: 25vh;
+  max-height: 500px;
+  display: grid;
+  place-items: center;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 5px 0px;
+  transform: translateX(400%);
+  transition: transform 500ms ease;
+}
+
+.box:nth-child(even) {
+  transform: translateX(-400%);
+}
+.box.active {
+  transform: translateX(0);
 }
