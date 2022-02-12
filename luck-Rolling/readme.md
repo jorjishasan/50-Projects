@@ -1,4 +1,4 @@
-## Connect me on :
+# Connect me on :
 
 [![Hackerrank][hackerrank-shield]][hackerrank-url]
 [![Leetcode][leetcode-shield]][leetcode-url]
@@ -7,13 +7,15 @@
 
 ![project Overview,](./dist/assets/frameMac.png)
 
+<br>
+
 # Toggle the [project](https://rollyourluck.netlify.app/ "my version") 👋
 
 <br>
 
-# This project idea was inspired from [That](https://pig-game-v2.netlify.app/ "jonas project")
+# This project idea was inspired from [That 👈](https://pig-game-v2.netlify.app/ "jonas project")
 
-## With the help of just an idea, I implement the whole new project's UI and functionality from the ground up. Due to the DRY principle, I refactor all codebases for standard being.
+## With the help of just an idea, I implement the whole new project's UI and functionality from the ground up. Due to the DRY principle, I refactor whole codebases for standard being.
 
 <br>
 
@@ -51,6 +53,6 @@
 [leetcode-shield]: https://img.shields.io/badge/-Leetcode-black.svg?style=flat-square&logo=leetcode&color=555&logoColor=white
 [leetcode-url]: https://leetcode.com/_jorjis/
 [codepen-shield]: https://img.shields.io/badge/-Codepen-black.svg?style=flat-square&logo=codepen&color=555&logoColor=white
-[codepen-url]: https://instagram.com/learnwithsumit
+[codepen-url]: https://codepen.io/jorjis
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/jorjis-hasan-4163a81a4/
