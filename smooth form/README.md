@@ -2,7 +2,7 @@
 
 # Find this project live [here 👈](https://stunningform.netlify.app/)
 
-## This project has a satisfying transition. The vast amount of code is tricky CSS or SASS stuff.
+## This project has a satisfying transition. The vast amount of code is tricky CSS or SASS stuff. Additionally, It's fully responsive.
 
 <br>
 
