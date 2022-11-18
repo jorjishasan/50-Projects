@@ -2,7 +2,7 @@
 
 <br>
 
-# Project itself is pretty self-explanatory. see it [**live**✨](https://genuser.netlify.app/ "open in a new tab")
+# Project itself is pretty self-explanatory. see it [**live**✨](https://pickuser.netlify.app/ "open in a new tab")
 
 ## This project covers some micro-intregational parts of UI.
 
@@ -20,7 +20,7 @@
 <br>
 
 - [Qr Code API](https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example)
-- [Random User Generator]("https://random-data-api.com/api/v2/users?response_type=json")
+- [Random User Generator](https://random-data-api.com/api/v2/users?response_type=json)
 - [Google Map Api](https://developers.google.com/maps/documentation/javascript/)
   - Google Javascript API
   - Google Places API
